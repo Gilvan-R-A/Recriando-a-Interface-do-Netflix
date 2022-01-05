@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/trailler4.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <title>Clifford, o Gigante Cão Vermelho</title>
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme1">
+            <div class="row">
+                <div class="col s12 l3 m12">
+                    <img class="card" src="img/filmes/filme4.jpg" alt="Clifford">
+                </div>
+                <div class="col s12 l8 m412 coluna2">
+                    <h3 class="titulo">Clifford, o Gigante Cão Vermelho (2021)</h3>
+                    <p class="indicacao">Animação, Comédia, Família</p>
+                    <p class="sinopse"><b>Sinopse:</b></p>
+                    <p class="descricao">
+                        Clifford era um pequeno filhotinho de cachorro vermelho que vivia
+                        em uma casa repleta de amor e cuidado. Porém, o amor de sua jovem
+                        dona, Emily Elizabeth, por ele é tão grande, que o cão cresce
+                        até atingir um tamanho gigantesco.
+                    </p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <a class="modal-trigger" href="#modal4">
+                                <i class="fas fa-play"></i>
+                                TRAILLER
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal4" class="modal tamanho">
+            <div class="modal-content">
+                <div class="row cabecalho">
+                    <div class="col s11 m11 l11">
+                        <h4 class="trailer">Clifford: O Gigante Cão Vermelho</h4>
+                    </div>
+                    <div class="col s1 m1 l1">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat fechar">X</a>
+                    </div>
+                </div>
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/8KCoNr6gx-s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/a11b6c5d29.js" crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            options = [];
+            var instances = M.Modal.init(elems, options);
+
+        });
+    </script>
+
+</body>
+
+</html>

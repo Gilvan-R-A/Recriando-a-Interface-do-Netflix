@@ -1,0 +1,218 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+
+body{
+  background: var(--preta) !important; 
+  font-family: 'Arial', Times, serif !important; 
+  color: white !important;
+}
+
+header .container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none !important;
+    color: #AAA !important;
+    font-size: 20px;
+    margin-right: 10px !important;
+}
+
+header nav a:hover{
+    color: #fff !important;
+}
+
+/*Filme Principal*/
+.filme1{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/filmes/eternos.jpg');
+
+    height: 550px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin-left: 20px;
+    
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px !important;
+}
+
+.card{
+    border-radius: 10px !important;  
+}
+
+.filme1 .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme1 .titulo{
+    margin-top: 0;
+    margin-bottom: 0;
+   padding-bottom: 0;
+    font-size: 40px !important;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    list-style:circle !important;
+}
+
+.indicacao{
+    color: #AAA !important; 
+    font-family: "Arial Black" sans-serif !important;
+    margin-bottom: 50px;
+}
+
+.sinopse{
+    margin-bottom: 10px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+margin-right: 8px;
+}
+
+.container1{
+    margin-left: 20px;
+}
+.botao a{
+    color: white;
+}
+
+.botao a:hover{
+    color: black;
+}
+ /*Modal*/
+
+ .tamanho{
+    height: 900px !important;
+    background-color: black !important;
+}
+
+.trailer{
+    font-size: 20px;
+}
+
+.cabecalho{
+    margin-bottom: 0 !important;
+}
+
+.fechar{
+    position: absolute !important;
+    width: 30px;
+    right: 5px;
+    
+    top: 0px;
+    color: white !important;
+    background: #ff4545 !important;
+    text-align:start !important;
+    border-radius: 50% !important;
+    font-size: 16px !important;
+    line-height: 35px !important;
+    padding-bottom: 5px !important;
+    padding-top: 2px !important;
+    padding-right: 5px !important;
+    padding-left: 10px !important;
+    margin-top: 5px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    header .container1{
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .filme1{
+        height: 1100px;
+    }
+
+    .card{
+        margin-top: 50px;
+        width: 400px;
+    }
+
+ }
+
+.botao{
+        margin-top: 5px;
+        width: 300px; 
+      }
+    
+ @media screen and (min-width: 1000px) {
+
+        .descricao{
+            width: 50%;
+        }
+
+        .card{
+            margin-top: 20px;
+            position: relative;
+        }
+
+    }
+
+@media screen  and(max-width: 1350){
+        .card{
+            margin-top: 20px;
+        }
+}
